@@ -4,8 +4,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v4
       - name: lint
-        run: npm run lint
+        run: npm lint
       - name: test
         run: npm test
       - name: build
