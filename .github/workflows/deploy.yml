@@ -7,7 +7,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
       - name: lint
-        run: npm lint
+        run: npm run lint
       - name: test
         run: npm test
       - name: build
